@@ -14,9 +14,9 @@ Profile Method
 
 ### Parameters
 - id (User ID)
-- option (Get single property from profile object)
+- property (Get single property from profile object)
 ```js
-profile(id, option)
+profile(id, property)
 ```
 
 ### Example Usage
