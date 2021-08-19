@@ -23,5 +23,7 @@ const devlist_api = new devlist.API_Controller();
 - No events for this class
 
 ### Class Methods
-- [profile](/docs/methods/profile)
-- [slug](/docs/methods/slug)
+- [profile](/docs/api-controller/profile)
+- [exists](/docs/api-controller/exists)
+- [slug](/docs/api-controller/slug)
+- [widget](/docs/api-controller/widget)

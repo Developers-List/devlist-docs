@@ -13,6 +13,9 @@ module.exports = {
   organizationName: '1TGDev', // Usually your GitHub org/user name.
   projectName: 'devlist', // Usually your repo name.
   themeConfig: {
+	colorMode: {
+	  defaultMode: 'dark',
+	},
     navbar: {
       title: 'Dev List',
       logo: {
@@ -24,17 +27,23 @@ module.exports = {
           type: 'doc',
           docId: 'get-started',
           position: 'left',
-          label: 'Documentation',
+          label: 'SDK',
         },
+        {to: '/api/get-started', label: 'API', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/1TGDev/devlist',
-          label: 'GitHub',
+		{
+          href: 'https://devlist.dev',
+          label: 'Website',
           position: 'right',
         },
 		{
           href: 'https://npmjs.com/devlist',
           label: 'NPM',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/1TGDev/devlist',
+          label: 'GitHub',
           position: 'right',
         },
       ],
@@ -46,8 +55,12 @@ module.exports = {
           title: 'Documentation',
           items: [
             {
-              label: 'Get Started',
+              label: 'SDK',
               to: '/docs/get-started',
+            },
+			{
+              label: 'API',
+              to: '/api/get-started',
             },
           ],
         },
@@ -108,6 +121,34 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'api',
+        routeBasePath: 'api',
+        sidebarPath: require.resolve('./sidebars.js'),
+		editUrl: 'https://github.com/1TGDev/devlist-docs/tree/master',
+      },
+    ],
+	[
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html'],
+        redirects: [
+          {
+            from: ['/docs'],
+            to: '/docs/get-started',
+          },
+		  {
+            from: ['/api', '/docs/api'],
+            to: '/api/get-started',
+          },
+        ],
       },
     ],
   ],
