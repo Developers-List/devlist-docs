@@ -33,12 +33,18 @@ Returns Website Status Object
 - ram (ram the website is using in MB)
 - database (database ping in ms)
 - uptime (the website uptime in ms)
+- statistics (website statistics object)
 ```js
 {
     "success": true,
     "message": "API is running, read docs at https://docs.devlist.dev",
-    "ram": 50.4,
-    "database": 6,
-    "uptime": 136893060.05961898
+    "ram": 27.68,
+    "database": 2,
+    "uptime": 2828559.576094,
+    "statistics": {
+        "total_profiles": 139,
+        "verified_profiles": 6,
+        "premium_profiles": 12
+    }
 }
 ```
