@@ -38,13 +38,13 @@ Returns Website Status Object
 {
     "success": true,
     "message": "API is running, read docs at https://docs.devlist.dev",
-    "ram": 27.68,
-    "database": 2,
-    "uptime": 2828559.576094,
+    "ram": 64.89,
+    "database": 1,
+    "uptime": 386920944.612058,
     "statistics": {
-        "total_profiles": 139,
+        "total_profiles": 149,
         "verified_profiles": 6,
-        "premium_profiles": 12
+        "premium_profiles": 11
     }
 }
 ```

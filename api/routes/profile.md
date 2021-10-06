@@ -32,7 +32,6 @@ Returns Profile Object
 - badges (profile badges names array)
 - bio (profile biography string)
 - bots (profile linked bots IDs array)
-- bug_hunter (profile bug_hunter xp percentage)
 - connections (profile linked connections objects array)
 - emails (profile emails array)
 - favorites (profile favorited profiles IDs array)
@@ -43,9 +42,14 @@ Returns Profile Object
 - websites (profile websites URLs array)
 - widgets (profile widgets object)
 - slug (profile vip slug)
+- vaniy_url (profile vanity URL)
 - theme (profile set theme name)
 - tags (profile tags array)
 - views (profile total views count)
+- xp (profile xp object - contains bug hunter xp)
+- blog (profile blog posts objects array)
+- projects (profile projects objects array)
+- contributed_projects (profile contributed projects objects array)
 - total_comments (profile total comments count)
 - comments (profile comments array)
 - configuration (profile configuration settings)
@@ -54,17 +58,16 @@ Returns Profile Object
 ```js
 {
     "ID": "300530315351425024",
-    "badges": Array[7][
+    "badges": [
+        "Dev List Founder",
         "Staff",
-        "Bug",
         "Verified",
         "Early",
-        "Suggester",
         "Premium",
         "Theme Creator"
     ],
-    "bio": "Prodigy Experienced Full-Stack Developer <a:famous:712067395572727889>\n[Check Out My Website](https://itariq.dev)",
-    "bots": Array[7][
+    "bio": "Prodigy Experienced Full-Stack Developer <a:famous:712067395572727889>\n[Developers List](/) Owner, [Check Out My Website](https://itariq.dev)",
+    "bots": [
         "698405560726323210",
         "668116464351576085",
         "744424113661149195",
@@ -73,7 +76,7 @@ Returns Profile Object
         "801334225667358740",
         "606026008109514762"
     ],
-    "connections": Array[5][
+    "connections": [
         {
             "type": "github",
             "id": "62197541",
@@ -100,7 +103,7 @@ Returns Profile Object
             "name": "TARIQ"
         }
     ],
-    "emails": Array[6][
+    "emails": [
         "contact@itariq.dev",
         "tariq@bioid.id",
         "support@developertools.app",
@@ -108,9 +111,15 @@ Returns Profile Object
         "support@devlist.dev",
         "support@ticksbot.com"
     ],
-    "favorites": Array[2][
+    "favorites": [
         "596004175662546957",
-        "697846463459491932"
+        "697846463459491932",
+        "668116464351576085",
+        "698405560726323210",
+        "826707445790670910",
+        "806534903021436928",
+        "606026008109514762",
+        "707333425685856316"
     ],
     "languages": {
         "HTML": 100,
@@ -122,23 +131,23 @@ Returns Profile Object
         "XML": 38,
         "SQL": 72
     },
-    "npm_packages": Array[5][
+    "npm_packages": [
         "devlist",
-        "clear-chat",
-        "bioid.id",
+        "git-releases",
         "mysql-database",
-        "git-releases"
+        "bioid.id",
+        "clear-chat"
     ],
-    "pip_packages": Array[0][
+    "pip_packages": [
         
     ],
-    "servers": Array[4][
+    "servers": [
         "cKf5Dhp",
         "EsPfMBT",
         "GGSzYVB",
         "A8kBVdHkVa"
     ],
-    "websites": Array[27][
+    "websites": [
         "https://itariq.dev",
         "https://bioid.id",
         "https://developertools.app",
@@ -172,22 +181,268 @@ Returns Profile Object
         "twitch": "tariqdev",
         "discord": "702837181726851118",
         "github": "1TGDev",
-		"profile": "https://devlist.dev/api/profile/300530315351425024/widget.png"
+        "profile": "https://devlist.dev/api/profile/300530315351425024/widget.png"
     },
     "slug": "tariq",
+    "vanity_url": "https://devlist.vip/tariq",
     "theme": null,
-    "tags": Array[3][
+    "tags": [
         "Full-Stack",
         "Websites",
         "Apps"
     ],
-    "views": 165,
+    "views": 602,
     "xp": {
-        "bug_hunter": 100,
-        "suggester": 0
+        "bug_hunter": 100
     },
-    "total_comments": 26,
-    "comments": Array[26][
+    "blog": [
+        {
+            "title": "Dev List now supports mentions!",
+            "content": "Dev List now supports mentions in:\n`-` Blog Posts including (Title + Content)\n`-` Projects including (Name + Description + FAQ)\n`-` Profile Bio\n`-` Comments\nThanks to me @300530315351425024 lol",
+            "images": [
+                
+            ],
+            "createdAt": 1632360968237
+        },
+        {
+            "title": "Blog Posts Images <:catlol:765906545111334922>",
+            "content": "Blogs posts now supports images or multiple images <:devlist:876121148990062642> <:catlol:765906545111334922>",
+            "images": [
+                "/cdn/blog/1629780356587.png"
+            ],
+            "editedAt": 1630754139960,
+            "createdAt": 1629780356587
+        },
+        {
+            "title": "100 Developer on the platform",
+            "content": "We just hit 100 Developer Profile on the [website](/) <:catlol:765906545111334922> <:devlist:876121148990062642>",
+            "images": [
+                
+            ],
+            "editedAt": 1629741929021,
+            "createdAt": 1629741929021
+        },
+        {
+            "title": "i need money",
+            "content": "buy premium `NOW` i need money <:catlol:765906545111334922>\n[Buy here now fast quick](https://devlist.dev/premium)",
+            "images": [
+                
+            ],
+            "editedAt": 1629387488458,
+            "createdAt": 1629387488458
+        },
+        {
+            "title": "first post on devlist <:devlist:876121148990062642>",
+            "content": "first <:catlol:765906545111334922>",
+            "images": [
+                
+            ],
+            "editedAt": 1629386207122,
+            "createdAt": 1629386207122
+        }
+    ],
+    "projects": [
+        {
+            "name": "Ticks",
+            "description": "A discord Bot that supports many features such as: Suggestions System, Embeds, Statistics and Auto Role with an easy & stylish to use dashboard (For Completely 100% Free)",
+            "images": [
+                "/cdn/projects/1630756468090.png",
+                "/cdn/projects/1630756468091.png"
+            ],
+            "contributors": [
+                
+            ],
+            "tags": [
+                "Dashboard",
+                "Moderation",
+                "Slash Command",
+                "Discord Bot"
+            ],
+            "links": {
+                "twitter": "TicksBot",
+                "github": null,
+                "website": "https://ticksbot.com",
+                "discord": "GGSzYVB",
+                "bot": "668116464351576085",
+                "email": "support@ticksbot.com"
+            },
+            "faq": [
+                {
+                    "question": "I got blacklisted for no reason, can it be removed",
+                    "answer": "Incase you are sure that your blacklist is a false blacklist, you can contact our support"
+                },
+                {
+                    "question": "Is bot prefix changeable",
+                    "answer": "Ticks uses built-in discord feature which is called slash command, which means in all guilds the bot uses the same prefix which is slash (/)"
+                }
+            ],
+            "createdAt": 1630756468092,
+            "editedAt": 1630759926509,
+            "publishedAt": 1632646165020
+        },
+        {
+            "name": "Developers List",
+            "description": "[Profiles](/profiles) for developers to link their projects, create teams & improve their skills and show others their creativity",
+            "images": [
+                "/cdn/projects/1630762602506.png",
+                "/cdn/projects/1630762602558.png"
+            ],
+            "contributors": [
+                
+            ],
+            "tags": [
+                "List",
+                "Profiles",
+                "Developers",
+                "Development"
+            ],
+            "links": {
+                "twitter": "DevelopersList",
+                "github": "1TGDev",
+                "website": "https://devlist.dev",
+                "discord": "EsPfMBT",
+                "bot": "697846463459491932",
+                "email": "support@devlist.dev"
+            },
+            "faq": [
+                {
+                    "question": "Where can i read faq",
+                    "answer": "[Read FAQ](/faq)"
+                }
+            ],
+            "createdAt": 1630762602560,
+            "publishedAt": 1631361476072
+        },
+        {
+            "name": "Filer",
+            "description": "Upload multiple and large files with no limits from the first device and download the file on your second device using file code, no login required",
+            "images": [
+                "/cdn/projects/1631362544443.png"
+            ],
+            "contributors": [
+                
+            ],
+            "tags": [
+                "Files",
+                "Upload",
+                "Cloud",
+                "Transfer"
+            ],
+            "links": {
+                "twitter": "xitariqx",
+                "github": "1TGDev",
+                "website": "https://filer.cloud",
+                "discord": null,
+                "bot": null,
+                "email": null
+            },
+            "faq": [
+                
+            ],
+            "publishedAt": 1632965826335,
+            "editedAt": 1632360497014,
+            "createdAt": 1631362544448
+        },
+        {
+            "name": "MySQL Database",
+            "description": "Easily modify your MySQL database data with easy functions",
+            "images": [
+                "/cdn/projects/1633172298333.png"
+            ],
+            "contributors": [
+                
+            ],
+            "tags": [
+                "MySQL",
+                "Database",
+                "Data",
+                "Store"
+            ],
+            "links": {
+                "twitter": "xitariqx",
+                "github": "1TGDev/mysql-database",
+                "website": "https://mysql-db.cloud",
+                "discord": "qgVtMwDuqQ",
+                "bot": null,
+                "email": null
+            },
+            "faq": [
+                
+            ],
+            "publishedAt": null,
+            "editedAt": 1633172298368,
+            "createdAt": 1633172298368
+        }
+    ],
+    "contributed_projects": [
+        {
+            "name": "Giveawaysbot",
+            "description": "Create Your Giveaways Now\nFast & Easy\nStart creating giveaways using our bot or from our dashboard\nwithout facing any problems. Design your giveaways\nwith the way you like.",
+            "images": [
+                "/cdn/projects/1630761732858.png",
+                "/cdn/projects/1630761722060.png"
+            ],
+            "contributors": [
+                "300530315351425024",
+                "431150885549113344",
+                "323930938125844480"
+            ],
+            "tags": [
+                "Leveling",
+                "Web Dashboard",
+                "Utility",
+                "Logging"
+            ],
+            "links": {
+                "twitter": "GiveawaysBD",
+                "github": null,
+                "website": "https://giveawaysb.cc/",
+                "discord": "QcGUyEg",
+                "bot": "606026008109514762",
+                "email": null
+            },
+            "faq": [
+                
+            ],
+            "createdAt": 1630760929751,
+            "editedAt": 1630760943895,
+            "publishedAt": 1631442410139,
+            "creator": "445630664671232000"
+        },
+        {
+            "name": "ProBot Tax",
+            "description": "Calculate ProBot tax easy from our website or using our bot",
+            "images": [
+                "/cdn/projects/1630813993133.png"
+            ],
+            "contributors": [
+                "300530315351425024",
+                "323930938125844480"
+            ],
+            "tags": [
+                "bot",
+                "tax",
+                "website",
+                "probot"
+            ],
+            "links": {
+                "twitter": "Fnr_8",
+                "github": "probot-tax",
+                "website": "https://pbtax.xyz/",
+                "discord": null,
+                "bot": "847273457519689801",
+                "email": "contact@pbtax.xyz"
+            },
+            "faq": [
+                
+            ],
+            "createdAt": 1630813993152,
+            "publishedAt": 1631363285102,
+            "creator": "596227913209217024"
+        }
+    ],
+    "total_comments": 28,
+    "comments": [
         {
             "content": "this is a pinned comment :)",
             "author": "300530315351425024",
@@ -205,6 +460,18 @@ Returns Profile Object
             "author": "294795706059849730",
             "createdAt": 1616300889364,
             "pinned": true
+        },
+        {
+            "content": "@xCuzSkillz#9889 i will kill you🌚",
+            "author": "832746559401623574",
+            "createdAt": 1632573962401,
+            "pinned": false
+        },
+        {
+            "content": "شُجاع ، صنديد ، فارِس ، شَهم ، مِقدام ، كفوّ ، مطنُوخ ، كريمَ ، فهِيم ، قويّ ، عَنيد ، سمْح ، نشمِي ، شيخ ، عطيبُ المَضاريب ، دعار، بَطل , أًشوَسُ , أَسَد, مِقْدَام, قوي ، رجل ، كفو ، صقر ، بطل ، ذيبان ، نسر ، جلاد، مطنوخ ، ذيب, فَتَّاك, بَتار , مقدام ‏، ‏السنافي ، المطنوخ،",
+            "author": "455468827262844930",
+            "createdAt": 1629517258153,
+            "pinned": false
         },
         {
             "content": "الي ما يحطلي فيفورت في حسابي بلحقه بألنعال <:catlol:767680378726383637>",
@@ -352,6 +619,8 @@ Returns Profile Object
             "favorites": true
         },
         "notifications": {
+            "new_project": true,
+            "new_blog_post": true,
             "new_comment": true,
             "comment_pinned": true,
             "bio": true,
@@ -365,7 +634,9 @@ Returns Profile Object
             "servers": true,
             "emails": true,
             "npm_packages": true,
-            "pip_packages": true
+            "pip_packages": true,
+            "suggestion_submit": true,
+            "theme_submit": true
         },
         "options": {
             "hire": true
