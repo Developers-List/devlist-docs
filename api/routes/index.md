@@ -15,7 +15,7 @@ Index Route
 
 ### Route
 ```js
-https://devlist.dev/api
+https://dlist.dev/api
 ```
 
 ### Method
@@ -37,14 +37,14 @@ Returns Website Status Object
 ```js
 {
     "success": true,
-    "message": "API is running, read docs at https://docs.devlist.dev",
-    "ram": 64.89,
-    "database": 1,
-    "uptime": 386920944.612058,
+    "message": "API is running, read docs at https://docs.dlist.dev",
+    "ram": 139.45,
+    "database": 2,
+    "uptime": 341002203.5691,
     "statistics": {
-        "total_profiles": 149,
-        "verified_profiles": 6,
-        "premium_profiles": 11
+        "total_profiles": 300,
+        "verified_profiles": 7,
+        "premium_profiles": 17
     }
 }
 ```

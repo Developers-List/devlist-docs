@@ -10,7 +10,7 @@ Official Dev List API
 
 <center>
 
-[<img src="https://devlist.dev/img/meta.png" alt="Logo" title="Dev List" width="100%" />](https://www.npmjs.com/package/devlist)
+[<img src="https://dlist.dev/img/meta.png" alt="Logo" title="Dev List" width="100%" />](https://www.npmjs.com/package/devlist)
 
 </center>
 

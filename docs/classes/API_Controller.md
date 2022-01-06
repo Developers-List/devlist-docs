@@ -15,8 +15,8 @@ API Controller Class Constructor
 ### Create Class
 
 ```js
-const devlist = require('devlist');
-const devlist_api = new devlist.API_Controller();
+const dlist = require('devlist');
+const dlist_api = new dlist.API_Controller();
 ```
 
 ### Class Events

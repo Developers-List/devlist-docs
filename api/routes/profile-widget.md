@@ -15,7 +15,7 @@ Profile Widget Route
 
 ### Route
 ```js
-https://devlist.dev/api/profile/:ID/widget.png
+https://dlist.dev/api/profile/:ID/widget.png
 ```
 
 ### Method
@@ -29,4 +29,4 @@ GET
 ### Returned Data
 Returns PNG Format Image
 
-[<img src="https://devlist.dev/api/profile/300530315351425024/widget.png" alt="TARIQ Dev List Profile" title="TARIQ Dev List Profile" width="100%" />](https://devlist.dev/api/profile/300530315351425024/widget.png)
+[<img src="https://dlist.dev/api/profile/300530315351425024/widget.png" alt="TARIQ Dev List Profile" title="TARIQ Dev List Profile" width="100%" />](https://dlist.dev/api/profile/300530315351425024/widget.png)

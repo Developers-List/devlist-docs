@@ -10,7 +10,7 @@ Official Dev List library for interacting with the Dev List API
 
 <center>
 
-[<img src="https://devlist.dev/img/meta.png" alt="Logo" title="Dev List" width="100%" />](https://www.npmjs.com/package/devlist)
+[<img src="https://dlist.dev/img/meta.png" alt="Logo" title="Dev List" width="100%" />](https://www.npmjs.com/package/devlist)
 
 <br/>
 
@@ -43,14 +43,18 @@ npm i devlist
 ### Example Usage 
 
 ```js
-const devlist = require('devlist');
-const devlist_api = new devlist.API_Controller();
+const dlist = require('devlist');
+const dlist_api = new dlist.API_Controller();
 
 async function getUserData(){
-	let user = await devlist_api.profile('300530315351425024');
-	console.log(user);
-	let slug = await devlist_api.slug('tariq');
-	console.log(slug);
+	let user = await dlist_api.profile('300530315351425024');
+	console.log(user); // profile object
+	let user = await dlist_api.exists('300530315351425024');
+	console.log(user); // true
+	let slug = await dlist_api.slug('tariq');
+	console.log(slug); // 300530315351425024
+	let widget = await dlist_api.widget('300530315351425024');
+	console.log(widget); // widget object
 }
 getUserData(); // calling the function
 ```

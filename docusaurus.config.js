@@ -5,11 +5,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Dev List',
   tagline: 'Official Devevelopers List API Documentation',
-  url: 'https://docs.devlist.dev',
+  url: 'https://docs.dlist.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://devlist.dev/img/favicon.png',
+  favicon: 'https://dlist.dev/img/favicon.png',
   organizationName: '1TGDev', // Usually your GitHub org/user name.
   projectName: 'devlist', // Usually your repo name.
   themeConfig: {
@@ -20,7 +20,7 @@ module.exports = {
       title: 'Dev List',
       logo: {
         alt: 'Logo',
-        src: 'https://devlist.dev/img/favicon.png',
+        src: 'https://dlist.dev/img/favicon.png',
       },
       items: [
         {
@@ -32,7 +32,7 @@ module.exports = {
         {to: '/api/get-started', label: 'API', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
 		{
-          href: 'https://devlist.dev',
+          href: 'https://dlist.dev',
           label: 'Website',
           position: 'right',
         },
@@ -77,7 +77,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://devlist.dev/discord',
+              href: 'https://dlist.dev/discord',
             },
           ],
         },

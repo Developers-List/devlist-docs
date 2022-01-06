@@ -7,7 +7,7 @@ export default function HomepageFeatures() {
 	<section className="">
 		<br /><br /><br />
 		<center>
-			<img src="https://devlist.dev/img/meta.png" className={styles.logo} />
+			<img src="https://dlist.dev/img/meta.png" className={styles.logo} />
 			<br /><br />
 			<img src="https://nodei.co/npm/devlist.png" />
 			<br />

@@ -20,7 +20,7 @@ exists(id)
 
 ### Example Usage
 ```js
-await devlist_api.exists("300530315351425024");
+await dlist_api.exists("300530315351425024");
 // -> returns boolean if the profile exists or not
 ```
 

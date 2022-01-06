@@ -20,7 +20,7 @@ slug(vanity_url)
 
 ### Example Usage
 ```js
-await devlist_api.slug("tariq");
+await dlist_api.slug("tariq");
 // -> returns the user ID of the user who owns the slug
 ```
 

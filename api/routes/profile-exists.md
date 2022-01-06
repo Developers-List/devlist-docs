@@ -15,7 +15,7 @@ Profile Exists Route
 
 ### Route
 ```js
-https://devlist.dev/api/profile/:ID/exists
+https://dlist.dev/api/profile/:ID/exists
 ```
 
 ### Method

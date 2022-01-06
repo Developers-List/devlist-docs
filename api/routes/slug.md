@@ -15,7 +15,7 @@ Slug Route
 
 ### Route
 ```js
-https://devlist.dev/api/slug/:slug
+https://dlist.dev/api/slug/:slug
 ```
 
 ### Method
