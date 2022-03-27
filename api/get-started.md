@@ -20,7 +20,7 @@ Official Dev List API
 
 ### Routes
 
-- [/](/api/routes/index)
+- [/](/api/routes)
 - [/profile/:ID](/api/routes/profile)
 - [/profile/:ID/exists](/api/routes/profile-exists)
 - [/profile/:ID/widget.png](/api/routes/profile-widget)
