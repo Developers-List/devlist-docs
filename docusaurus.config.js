@@ -13,6 +13,16 @@ module.exports = {
   organizationName: '1TGDev', // Usually your GitHub org/user name.
   projectName: 'devlist', // Usually your repo name.
   themeConfig: {
+	metadata: [
+		{
+			name: 'theme-color',
+			content: '#6571f3'
+		},
+		{
+			property: 'og:image',
+			content: 'https://docs.dlist.dev/img/meta.png'
+		}
+	],
 	colorMode: {
 	  defaultMode: 'dark',
 	},

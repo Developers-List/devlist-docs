@@ -29,7 +29,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title="Home"
       description="Official Dev List library for interacting with the Dev List API">
 	  <HomepageHeader />
       <main>

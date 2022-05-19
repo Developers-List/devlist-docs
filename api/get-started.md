@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # Getting Started
 
-Official Dev List API
+Official Bio API
 
 <br/>
 
 <center>
 
-[<img src="https://dlist.dev/img/meta.png" alt="Logo" title="Dev List" width="100%" />](https://www.npmjs.com/package/devlist)
+[<img src="https://bioid.id/img/meta.png" alt="Logo" title="Bio" width="100%" />](https://www.npmjs.com/package/bioid.id)
 
 </center>
 
